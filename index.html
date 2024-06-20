@@ -1,0 +1,121 @@
+1-> -----First setup the infra of the setup------
+root
+passwd root
+hostnamectl set-hostname name.com
+bash
+ *******perform this in all the setups*******
+
+
+
+
+
+2-> ----------Update the linux and install git------ perform in every infra setup
+yum update
+yum install git
+y
+rpm query git
+
+
+----- making git server----
+mkdir /project
+ll -d /project/
+cd /project/
+ll
+git init --bare ---- act as a git server
+----make other two as clients----
+git init ----act as a client
+l.
+
+3->----
+cd /dev-one/
+ls -a
+vim index.html
+hi alll good afternoon 
+ll
+cat index.html
+git status 
+git add index.html-----adds the staging
+git comit -m "first- commit" index.html
+git status
+git log
+git remote add origin root@ip address:/project
+git push origin master
+cd .gt/
+git remote remove origin root@address:/project
+git add.
+
+************************************************
+
+ssh-keygen
+l.
+cd .ssh/
+ll
+cat id_rsa.pub
+
+*********************************************************
+------server side to enable the permissions to push-----
+vim /etc/ssh/sshd_config 
+systemctl restart sshd
+systemctl ena ble shhd
+systemctl status sshd
+
+
+
+
+ssh-copy-id root@ipaddress
+
+*********************************************************************
+----dev -2 -----
+ssh-keygen
+l.
+cd. ssh
+ssh-copy-id root@h
+
+cat authorized_keys
+
+****it has to be done in the second client******
+ssh-copy-id root@ipaddress
+cd /dev-two/
+ll
+git clone  root@ip address:/serverdirectory
+ll
+cd serverdirectory/
+cat index.html
+*********************************************************************
+
+
+*****Branching******--on client side2
+cd /don
+ll
+
+
+
+*****Branching******--on client side1
+git branch staging
+git branch --> this will go to master branch
+--->swithcing to other branch
+git checkout staging 
+git branch
+
+cat> test-code
+thisis my test code
+ll
+git add test-code
+git commit -m "test" test-code
+git log
+-->merging to shift it to 
+git merge master
+git merge staging
+git log
+
+
+
+
+
+
+
+
+
+
+
+
